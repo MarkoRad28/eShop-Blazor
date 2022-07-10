@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ijfVP6+ZSZ1aJEpdb/FGVws9VQwPKyTiHN7LpZ/rqx4qXCbnOsfYZl1vYkmx9GPK7h91fZq9o2UDZ4VOBXa51w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mradojevic\\source\\repos\\Blazor\\eShop\\eShop.UseCases\\eShop.UseCases.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mradojevic\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\mradojevic\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mradojevic\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

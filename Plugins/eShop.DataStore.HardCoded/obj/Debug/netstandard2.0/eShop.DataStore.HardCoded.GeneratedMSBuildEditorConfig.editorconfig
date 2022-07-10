@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = eShop.DataStore.HardCoded
+build_property.ProjectDir = C:\Users\mradojevic\source\repos\Blazor\eShop\Plugins\eShop.DataStore.HardCoded\
