@@ -29,7 +29,7 @@ namespace eShop.CoreBusiness.Models
         {
             var item = LineItems.FirstOrDefault(x => x.ProductId == productId);
             if (item != null) item.Quantity += quantity;
-            else LineItems.Add(new OrderLineItem { ProductId = productId, Quantity = quantity, Price = price });
+            else LineItems.Add(new OrderLineItem { ProductId = productId, Quantity = quantity, Price = price, OrderId = OrderId });
         }
 
         public void RemoveProduct(int productId)
