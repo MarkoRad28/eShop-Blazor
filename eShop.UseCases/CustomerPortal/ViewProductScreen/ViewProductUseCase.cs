@@ -1,10 +1,10 @@
 ﻿using eShop.CoreBusiness.Models;
-using eShop.UseCases.PluginInterfaces.DataStore;
+using eShop.UseCases.CustomerPortal.PluginInterfaces.DataStore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShop.UseCases.ViewProductScreen
+namespace eShop.UseCases.CustomerPortal.ViewProductScreen
 {
     public class ViewProductUseCase : IViewProductUseCase
     {

@@ -1,7 +1,7 @@
 ﻿using eShop.CoreBusiness.Models;
 using System.Collections.Generic;
 
-namespace eShop.UseCases.SearchProductScreen
+namespace eShop.UseCases.CustomerPortal.SearchProductScreen
 {
     public interface ISearchProductUseCase
     {

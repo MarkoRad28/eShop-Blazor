@@ -1,14 +1,14 @@
 ﻿using eShop.CoreBusiness.Models;
 using eShop.CoreBusiness.Services;
-using eShop.UseCases.PluginInterfaces.DataStore;
-using eShop.UseCases.PluginInterfaces.StateStore;
-using eShop.UseCases.PluginInterfaces.UI;
+using eShop.UseCases.CustomerPortal.PluginInterfaces.DataStore;
+using eShop.UseCases.CustomerPortal.PluginInterfaces.StateStore;
+using eShop.UseCases.CustomerPortal.PluginInterfaces.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 //TODO Promeniti lokaciju klase i interfejsa
-namespace eShop.UseCases.ShoppingCartScreen
+namespace eShop.UseCases.CustomerPortal.ShoppingCartScreen
 {
     public class PlaceOrderUseCase : IPlaceOrderUseCase
     {

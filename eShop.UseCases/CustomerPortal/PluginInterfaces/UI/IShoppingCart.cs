@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eShop.UseCases.PluginInterfaces.UI
+namespace eShop.UseCases.CustomerPortal.PluginInterfaces.UI
 {
     public interface IShoppingCart
     {

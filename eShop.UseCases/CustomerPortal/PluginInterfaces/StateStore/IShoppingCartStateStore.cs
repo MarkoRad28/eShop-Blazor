@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eShop.UseCases.PluginInterfaces.StateStore
+namespace eShop.UseCases.CustomerPortal.PluginInterfaces.StateStore
 {
     public interface IShoppingCartStateStore : IStateStore
     {

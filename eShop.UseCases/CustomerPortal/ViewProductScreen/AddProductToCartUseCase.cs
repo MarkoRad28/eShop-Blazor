@@ -1,11 +1,11 @@
-﻿using eShop.UseCases.PluginInterfaces.DataStore;
-using eShop.UseCases.PluginInterfaces.StateStore;
-using eShop.UseCases.PluginInterfaces.UI;
+﻿using eShop.UseCases.CustomerPortal.PluginInterfaces.DataStore;
+using eShop.UseCases.CustomerPortal.PluginInterfaces.StateStore;
+using eShop.UseCases.CustomerPortal.PluginInterfaces.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShop.UseCases.ViewProductScreen
+namespace eShop.UseCases.CustomerPortal.ViewProductScreen
 {
     public class AddProductToCartUseCase : IAddProductToCartUseCase
     {

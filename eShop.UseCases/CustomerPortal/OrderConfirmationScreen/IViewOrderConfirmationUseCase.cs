@@ -1,6 +1,6 @@
 ﻿using eShop.CoreBusiness.Models;
 
-namespace eShop.UseCases.OrderConfirmationScreen
+namespace eShop.UseCases.CustomerPortal.OrderConfirmationScreen
 {
     public interface IViewOrderConfirmationUseCase
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShop.UseCases.PluginInterfaces.StateStore
+namespace eShop.UseCases.CustomerPortal.PluginInterfaces.StateStore
 {
     public interface IStateStore
     {

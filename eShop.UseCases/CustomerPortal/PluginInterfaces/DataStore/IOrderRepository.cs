@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShop.UseCases.PluginInterfaces.DataStore
+namespace eShop.UseCases.CustomerPortal.PluginInterfaces.DataStore
 {
     public interface IOrderRepository
     {
