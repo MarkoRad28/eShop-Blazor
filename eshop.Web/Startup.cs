@@ -40,6 +40,14 @@ namespace eshop.Web
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+            services.AddAuthentication("eShop.CookieAuth")
+                .AddCookie("eShop.CookieAuth", config =>
+                {
+                    config.Cookie.Name = "eShop.CookieAuth";
+                    config.LoginPath = "/authenticate";
+                });
+
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
@@ -85,8 +93,12 @@ namespace eshop.Web
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
