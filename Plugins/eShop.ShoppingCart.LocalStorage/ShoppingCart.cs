@@ -26,7 +26,7 @@ namespace eShop.ShoppingCart.LocalStorage
         public async Task<Order> AddProductAsync(Product product)
         {
             var order = await GetOrder();
-            order.AddProduct(product.Id, 1, product.Price);
+            order.AddProduct(product.ProductId, 1, product.Price);
             await SetOrder(order);
 
             return order;

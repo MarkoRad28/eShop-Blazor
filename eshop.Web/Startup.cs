@@ -1,6 +1,8 @@
 using eshop.Web.Data;
 using eShop.CoreBusiness.Services;
-using eShop.DataStore.HardCoded;
+using eShop.DataStore.SQL.Dapper;
+using eShop.DataStore.SQL.Dapper.Helpers;
+//using eShop.DataStore.HardCoded;
 using eShop.ShoppingCart.LocalStorage;
 using eShop.StateStore.DI;
 using eShop.UseCases.AdminPortal.OrderDetailScreen;
@@ -52,9 +54,6 @@ namespace eshop.Web
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
 
-            services.AddSingleton<IProductRepository, ProductRepository>();
-            services.AddSingleton<IOrderRepository, OrderRepository>();
-
             services.AddScoped<IShoppingCart, ShoppingCart>();
             services.AddScoped<IShoppingCartStateStore, ShoppingCartStateStore>();
 
@@ -72,6 +71,10 @@ namespace eshop.Web
             services.AddTransient<IProcessOrderUseCase, ProcessOrderUseCase>();
             services.AddTransient<IViewOrderDetailUseCase, ViewOrderDetailUseCase>();
             services.AddTransient<IViewProcessedOrdersUseCase, ViewProcessedOrdersUseCase>();
+
+            services.AddTransient<IDataAccess>(sp => new DataAccess(Configuration.GetConnectionString("Default")));
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -40,7 +40,7 @@
 
     private void AddToCart()
     {
-        addProductCartUseCase.Execute(this.product.Id);
+        addProductCartUseCase.Execute(this.product.ProductId);
         navigaionManager.NavigateTo("/");
     }
 
